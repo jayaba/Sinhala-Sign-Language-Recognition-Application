@@ -65,6 +65,8 @@ flutter:
     - assets/images/backgroundimage.png
     - assets/images/home_icon.png
     - assets/images/waving-hand_.gif
+    - assets/images/waving-hand1.gif
+    - assets/images/homepage_logo.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
