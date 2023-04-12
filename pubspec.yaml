@@ -69,12 +69,11 @@ flutter:
     - assets/images/homepage_logo.png
     - assets/images/voiceyosigntileImage.png
     - assets/images/aa.png
-    # - assets/images/bb.png
-    # - assets/images/gg.png
-    # - assets/images/rr.png
-    # - assets/images/ee.png
-    # - assets/images/pp.png
-    # - assets/images/mm.png
+    - assets/images/bb.png
+    - assets/images/gg.png
+    - assets/images/ee.png
+    - assets/images/pp.png
+    - assets/images/mm.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

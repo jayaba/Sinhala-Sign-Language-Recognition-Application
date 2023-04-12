@@ -399,7 +399,7 @@ class ThirdLearnTile extends StatelessWidget {
         children: [
           Center(
             child: Container(
-              margin: EdgeInsets.only(bottom: 1.0.w),
+              margin: EdgeInsets.only(bottom: 6.0.w, top: 2.5.h),
               height: 17.h,
               width: 11.h,
               child: Image(
@@ -487,10 +487,11 @@ class SecondLearnTile extends StatelessWidget {
         children: [
           Center(
             child: Container(
-              margin: EdgeInsets.only(bottom: 1.0.w),
-              height: 17.h,
+              margin: EdgeInsets.only(bottom: 4.0.w, top: 2.h),
+              height: 15.h,
               width: 11.h,
               child: Image(
+                fit: BoxFit.scaleDown,
                 image: AssetImage('assets/images/bb.png'),
               ),
             ),
