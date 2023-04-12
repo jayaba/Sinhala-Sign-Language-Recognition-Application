@@ -49,25 +49,508 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 2.5.h,
           ),
-          Container(
-            // margin: EdgeInsets.only(left: 4.5.h),
-            margin: EdgeInsets.only(left: 1.w),
-            height: 5.h,
-            width: 93.w,
-            child: Text(
-              "Learn Sign Language",
-              style: GoogleFonts.play(fontSize: 3.5.h),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Container(
+                margin: EdgeInsets.only(left: 1.h),
+                height: 5.h,
+                width: 65.w,
+                child: Text(
+                  "Learning Environment",
+                  style: GoogleFonts.play(fontSize: 3.5.h),
+                ),
+              ),
+              Container(
+                // color: Colors.black,
+                // margin: EdgeInsets.only(left: 4.5.h),
+                margin: EdgeInsets.only(left: 1.w, bottom: 1.h),
+                height: 4.8.h,
+                width: 25.w,
+                child: TextButton(
+                  onPressed: () => null,
+                  child: Text(
+                    "View All",
+                    style: GoogleFonts.poppins(
+                        fontSize: 2.5.h,
+                        fontWeight: FontWeight.w600,
+                        color: Color.fromARGB(255, 182, 153, 51)),
+                  ),
+                ),
+              ),
+            ],
           ),
           Expanded(
-              child: ListView(children: [
-            FirstLearnTile(),
-            FirstLearnTile(),
-            FirstLearnTile(),
-            FirstLearnTile(),
-            FirstLearnTile(),
-            FirstLearnTile(),
-          ]))
+              child: Container(
+            // color: Colors.amberAccent,
+            width: 93.w,
+            child: ListView(children: [
+              FirstLearnTile(),
+              SizedBox(
+                height: 2.h,
+              ),
+              SecondLearnTile(),
+              SizedBox(
+                height: 2.h,
+              ),
+              ThirdLearnTile(),
+              SizedBox(
+                height: 2.h,
+              ),
+              ForthLearnTile(),
+              SizedBox(
+                height: 2.h,
+              ),
+              FifthLearnTile(),
+              SizedBox(
+                height: 2.h,
+              ),
+              SixLearnTile(),
+              SizedBox(
+                height: 5.h,
+              ),
+            ]),
+          ))
+        ],
+      ),
+    );
+  }
+}
+
+class SixLearnTile extends StatelessWidget {
+  const SixLearnTile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10.h,
+      width: 20.w,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 236, 236, 236),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        children: [
+          Center(
+            child: Container(
+              margin: EdgeInsets.only(bottom: 0.0.w),
+              height: 17.h,
+              width: 11.h,
+              child: Image(
+                image: AssetImage('assets/images/mm.png'),
+              ),
+            ),
+          ),
+          Container(
+            height: 4.h,
+            width: 0.3.w,
+            color: Color.fromARGB(255, 129, 129, 129),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 2.4.h, left: 1.h),
+                height: 3.8.h,
+                width: 10.h,
+                child: Text(
+                  "ම",
+                  style: GoogleFonts.poppins(fontSize: 3.3.h),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 1.h, left: 0.2.h),
+                height: 2.5.h,
+                width: 9.5.h,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Container(
+                    child: Text(
+                      "Learn More",
+                      style: GoogleFonts.poppins(fontSize: 1.2.h),
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    primary: Color.fromARGB(255, 0, 0, 0),
+                    side: BorderSide(
+                      color: Color.fromARGB(255, 148, 148, 148),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 11.h, bottom: 0.h),
+            width: 6.h,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Color.fromARGB(255, 95, 95, 95),
+                size: 3.5.h,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class FifthLearnTile extends StatelessWidget {
+  const FifthLearnTile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10.h,
+      width: 20.w,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 236, 236, 236),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        children: [
+          Center(
+            child: Container(
+              margin: EdgeInsets.only(bottom: 0.0.w),
+              height: 17.h,
+              width: 11.h,
+              child: Image(
+                image: AssetImage('assets/images/pp.png'),
+              ),
+            ),
+          ),
+          Container(
+            height: 4.h,
+            width: 0.3.w,
+            color: Color.fromARGB(255, 129, 129, 129),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 2.4.h, left: 1.h),
+                height: 3.8.h,
+                width: 10.h,
+                child: Text(
+                  "ප",
+                  style: GoogleFonts.poppins(fontSize: 3.3.h),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 1.h, left: 0.2.h),
+                height: 2.5.h,
+                width: 9.5.h,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Container(
+                    child: Text(
+                      "Learn More",
+                      style: GoogleFonts.poppins(fontSize: 1.2.h),
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    primary: Color.fromARGB(255, 0, 0, 0),
+                    side: BorderSide(
+                      color: Color.fromARGB(255, 148, 148, 148),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 11.h, bottom: 0.h),
+            width: 6.h,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Color.fromARGB(255, 95, 95, 95),
+                size: 3.5.h,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class ForthLearnTile extends StatelessWidget {
+  const ForthLearnTile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10.h,
+      width: 20.w,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 236, 236, 236),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        children: [
+          Center(
+            child: Container(
+              margin: EdgeInsets.only(bottom: 0.0.w),
+              height: 10.h,
+              width: 11.h,
+              child: Image(
+                image: AssetImage('assets/images/ee.png'),
+              ),
+            ),
+          ),
+          Container(
+            height: 4.h,
+            width: 0.3.w,
+            color: Color.fromARGB(255, 129, 129, 129),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 2.4.h, left: 1.h),
+                height: 3.8.h,
+                width: 10.h,
+                child: Text(
+                  "එ",
+                  style: GoogleFonts.poppins(fontSize: 3.3.h),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 1.h, left: 0.2.h),
+                height: 2.5.h,
+                width: 9.5.h,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Container(
+                    child: Text(
+                      "Learn More",
+                      style: GoogleFonts.poppins(fontSize: 1.2.h),
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    primary: Color.fromARGB(255, 0, 0, 0),
+                    side: BorderSide(
+                      color: Color.fromARGB(255, 148, 148, 148),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 11.h, bottom: 0.h),
+            width: 6.h,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Color.fromARGB(255, 95, 95, 95),
+                size: 3.5.h,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class ThirdLearnTile extends StatelessWidget {
+  const ThirdLearnTile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10.h,
+      width: 20.w,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 236, 236, 236),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        children: [
+          Center(
+            child: Container(
+              margin: EdgeInsets.only(bottom: 1.0.w),
+              height: 17.h,
+              width: 11.h,
+              child: Image(
+                image: AssetImage('assets/images/gg.png'),
+              ),
+            ),
+          ),
+          Container(
+            height: 4.h,
+            width: 0.3.w,
+            color: Color.fromARGB(255, 129, 129, 129),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 2.4.h, left: 1.h),
+                height: 3.8.h,
+                width: 10.h,
+                child: Text(
+                  "ග",
+                  style: GoogleFonts.poppins(fontSize: 3.3.h),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 1.h, left: 0.2.h),
+                height: 2.5.h,
+                width: 9.5.h,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Container(
+                    child: Text(
+                      "Learn More",
+                      style: GoogleFonts.poppins(fontSize: 1.2.h),
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    primary: Color.fromARGB(255, 0, 0, 0),
+                    side: BorderSide(
+                      color: Color.fromARGB(255, 148, 148, 148),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 11.h, bottom: 0.h),
+            width: 6.h,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Color.fromARGB(255, 95, 95, 95),
+                size: 3.5.h,
+              ),
+            ),
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class SecondLearnTile extends StatelessWidget {
+  const SecondLearnTile({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 10.h,
+      width: 20.w,
+      decoration: BoxDecoration(
+        color: Color.fromARGB(255, 236, 236, 236),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Row(
+        children: [
+          Center(
+            child: Container(
+              margin: EdgeInsets.only(bottom: 1.0.w),
+              height: 17.h,
+              width: 11.h,
+              child: Image(
+                image: AssetImage('assets/images/bb.png'),
+              ),
+            ),
+          ),
+          Container(
+            height: 4.h,
+            width: 0.3.w,
+            color: Color.fromARGB(255, 129, 129, 129),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
+          Column(
+            children: [
+              Container(
+                margin: EdgeInsets.only(top: 2.4.h, left: 1.h),
+                height: 3.8.h,
+                width: 10.h,
+                child: Text(
+                  "බ",
+                  style: GoogleFonts.poppins(fontSize: 3.3.h),
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.only(bottom: 1.h, left: 0.2.h),
+                height: 2.5.h,
+                width: 9.5.h,
+                child: OutlinedButton(
+                  onPressed: () {},
+                  child: Container(
+                    child: Text(
+                      "Learn More",
+                      style: GoogleFonts.poppins(fontSize: 1.2.h),
+                    ),
+                  ),
+                  style: OutlinedButton.styleFrom(
+                    primary: Color.fromARGB(255, 0, 0, 0),
+                    side: BorderSide(
+                      color: Color.fromARGB(255, 148, 148, 148),
+                    ),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),
+          Container(
+            margin: EdgeInsets.only(left: 11.h, bottom: 0.h),
+            width: 6.h,
+            child: IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.arrow_forward_ios_outlined,
+                color: Color.fromARGB(255, 95, 95, 95),
+                size: 3.5.h,
+              ),
+            ),
+          )
         ],
       ),
     );
@@ -83,7 +566,7 @@ class FirstLearnTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 10.h,
-      width: 93.w,
+      width: 20.w,
       decoration: BoxDecoration(
         color: Color.fromARGB(255, 236, 236, 236),
         borderRadius: BorderRadius.circular(20),
@@ -92,7 +575,7 @@ class FirstLearnTile extends StatelessWidget {
         children: [
           Center(
             child: Container(
-              margin: EdgeInsets.only(left: 0.0.h),
+              margin: EdgeInsets.only(bottom: 1.0.w),
               height: 17.h,
               width: 11.h,
               child: Image(
@@ -100,31 +583,41 @@ class FirstLearnTile extends StatelessWidget {
               ),
             ),
           ),
+          Container(
+            height: 4.h,
+            width: 0.3.w,
+            color: Color.fromARGB(255, 129, 129, 129),
+          ),
+          SizedBox(
+            width: 3.w,
+          ),
           Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 1.5.h, left: 1.h),
+                margin: EdgeInsets.only(top: 2.h, left: 1.h),
                 height: 4.3.h,
                 width: 10.h,
                 child: Text(
                   "අ",
-                  style: GoogleFonts.poppins(fontSize: 3.8.h),
+                  style: GoogleFonts.poppins(fontSize: 3.5.h),
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 0.h, left: 1.h),
+                margin: EdgeInsets.only(top: 0.h, left: 0.2.h),
                 height: 2.5.h,
-                width: 11.h,
+                width: 9.5.h,
                 child: OutlinedButton(
                   onPressed: () {},
-                  child: Text(
-                    "Learn More",
-                    style: GoogleFonts.poppins(fontSize: 1.4.h),
+                  child: Container(
+                    child: Text(
+                      "Learn More",
+                      style: GoogleFonts.poppins(fontSize: 1.2.h),
+                    ),
                   ),
                   style: OutlinedButton.styleFrom(
                     primary: Color.fromARGB(255, 0, 0, 0),
                     side: BorderSide(
-                      color: Color.fromARGB(255, 3, 3, 3),
+                      color: Color.fromARGB(255, 148, 148, 148),
                     ),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7),
@@ -135,14 +628,14 @@ class FirstLearnTile extends StatelessWidget {
             ],
           ),
           Container(
-            margin: EdgeInsets.only(left: 11.h, bottom: 1.h),
+            margin: EdgeInsets.only(left: 11.h, bottom: 0.h),
             width: 6.h,
             child: IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.arrow_forward_ios_outlined,
-                color: Color.fromARGB(255, 155, 152, 113),
-                size: 5.h,
+                color: Color.fromARGB(255, 95, 95, 95),
+                size: 3.5.h,
               ),
             ),
           )
