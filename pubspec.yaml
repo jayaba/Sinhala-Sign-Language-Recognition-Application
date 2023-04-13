@@ -74,6 +74,15 @@ flutter:
     - assets/images/ee.png
     - assets/images/pp.png
     - assets/images/mm.png
+    - assets/images/lr2br.png
+    - assets/images/lrAA.png
+    - assets/images/lrAA1.png
+    - assets/images/lrBB.png
+    - assets/images/lrDD.png
+    - assets/images/lrEE.png
+    - assets/images/lrGG.png
+    - assets/images/lrhh.png
+    - assets/images/lrKK.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

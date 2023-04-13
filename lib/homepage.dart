@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sinhala_sl_system/AppColors.dart';
+import 'package:sinhala_sl_system/Impl/LearningEnv.dart';
 import 'package:sizer/sizer.dart';
 
 class HomePage extends StatefulWidget {
@@ -68,12 +69,16 @@ class _HomePageState extends State<HomePage> {
                 height: 4.8.h,
                 width: 25.w,
                 child: TextButton(
-                  onPressed: () => null,
+                  onPressed: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => LearningHome(),
+                    ),
+                  ),
                   child: Text(
                     "View All",
                     style: GoogleFonts.poppins(
                         fontSize: 2.5.h,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w400,
                         color: Color.fromARGB(255, 182, 153, 51)),
                   ),
                 ),
